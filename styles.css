@@ -1,0 +1,845 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: #fbfbfb;
+    color: #333;
+    margin: 0px;
+}
+
+.button {
+    background-color: #3C5D53;
+    border: none;
+    color: #BFEDDD;
+    padding: 16px 32px;
+    margin: 16px;
+    border-radius: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    transition-duration: 0.4s;
+  }
+
+  .button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: #3C5D53;
+    background-color: #BFEDDD;
+    border: #3C5D53;
+    border-style: solid;
+  }
+
+p {
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #333;
+    margin: 16px 0px;
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: "Outfit", sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    color: #333;
+    margin: 0px;
+}
+
+h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color:#333;
+    margin: 0px;
+}
+
+h3 {
+    font-family: "Outfit", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #7969BA;
+    margin: 0px;
+    transition: ease-in-out 0.3s;
+}
+
+h4 {
+    font-family: "Outfit", sans-serif;
+    font-size: 32px;
+    color: #333;
+    margin: 0px;
+    margin-bottom: 16px;
+    transition: ease-in-out 0.3s;
+}
+
+h5 {
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+    color: #7969BA;
+    margin: 0px;
+    transition: ease-in-out 0.3s;
+}
+
+a {
+    color:#fcfcfc;
+    margin-bottom: 16px;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #EE33A2;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 8px;
+}
+
+.halfSize {
+    width: 50%;
+}
+
+.seventyFive {
+    width: 75%;
+}
+
+/*Intro*/
+
+#intro {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.introContainer {
+    margin-top: 48px;
+    margin-bottom: 112px;
+    width: fit-content;
+}
+
+.pronouns {
+    padding-left: 8px;
+}
+
+.introHello {
+    padding-right: 8px;
+    color: #7969BA;
+}
+
+.introIam {
+    width: fit-content;
+    margin-top: 8px;
+}
+
+.helloJake {
+    width: fit-content;
+    margin-bottom: 0px;
+    align-items: baseline;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1;
+}
+
+/*Header & Nav*/
+
+header {
+    margin: 48px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcfcfc;
+    color:#7969BA;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.circle-logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    transition: ease-in-out 0.3s;
+    padding-right: 16px;
+}
+
+.logoText {
+    color: #333;
+    font-size: 32px;
+}
+
+nav {
+    margin: 16px;
+}
+
+nav a {
+    padding: 16px;
+    min-width: 128px;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color:#7969BA;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #EE33A2;
+}
+
+.circle-logo:hover {
+    width: 96px;
+    height: 96px;
+}
+
+/*Projects*/
+
+.projectContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 48px;
+}
+
+.projectCard {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 48px 8px;
+    transition: ease-in-out 0.3s;
+}
+
+.projectLinebreak {
+    background-color: #333;
+    height: 3px;
+    width: 160px;
+    border-radius: 3px;
+    margin-bottom: 16px;
+}
+
+.projectImage {
+    display: flex;
+    width: 100%;
+    max-width: 640px;
+    transition: ease-in-out 0.3s;
+}
+
+.projectTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    /*margin: 0px 48px 0px 48px;*/
+    max-width: 360px;
+    height: 360px;
+    p {
+        font-size: 24px;
+        margin: 0px 8px;
+
+    }
+}
+
+.projectView {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+    transition: ease-in-out 0.5s;
+    opacity: 0.0;
+}
+
+.projectCard:hover {
+    .projectImage {
+        max-width: 800px;
+    }
+    h4 {
+        color:#EE33A2
+    }
+    .projectView {
+        opacity: 1.0;
+        p {
+            color: #EE33A2;
+        }
+    }
+
+}
+
+.sml-icon {
+    height: 16px;
+    width: 16px;
+    margin: 0px 8px;
+    transition: ease-in-out 0.3s;
+}
+
+/*About*/
+
+#About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    padding-right: 8px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: fit-content;
+    margin: 16px;
+}
+
+.aboutPhoto {
+    max-width: 320px;
+    max-height: 320px;
+    border-radius: 50%;
+    margin-right: 72px;
+    margin-bottom: 48px;
+    transition: ease-in-out 0.4s;
+}
+
+.aboutLinebreak {
+    background-color:#EE33A2;
+    height: 2px;
+    width: 50%;
+    margin: 16px 0px;
+}
+
+.aboutPhoto:hover {
+    max-width: 328px;
+    max-height: 328px;
+}
+
+.aboutIntro {
+    margin-top: 0px;
+    margin-bottom: 24px;
+    width: fit-content;
+}
+
+.aboutLinkscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.aboutLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 20px;
+        margin: 8px 0px;
+    }
+
+}
+
+.aboutLink:hover {
+    p{
+        color: #EE33A2;
+    }
+    .sml-icon {
+        rotate: -45deg;
+        scale: 1.3;
+    }
+}
+
+/*UX Skills*/
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-card {
+    width: 22%;
+    min-width: 240px;
+    padding: 48px 24px 24px 24px;
+    margin: 24px;
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out 0.3s;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.skill-card:hover {
+    padding: 24px 72px;
+    box-shadow: 2px 8px 16px 8px rgba(0,0,0,0.08);
+    translate: 0px -24px;
+    .skill-icon {
+        scale: 1.06;
+        margin: 8 auto 28px;
+        box-shadow: 4px 8px 16px rgba(0,0,0,0.1);
+    }
+}
+
+.skill-icon {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+}
+
+.skill-description {
+    margin-top: 24px;
+    text-align: center;
+}
+
+/* Case Study */
+
+#caseTitle {
+    width: 100%;
+    margin: 48px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleContainer {
+    width: fit-content;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.titleText {
+    text-align: center;
+    transition: ease-in-out 0.3s;
+}
+
+.titleText:hover {
+    color:#EE33A2;
+    text-align: center;
+    font-size: 64px;
+}
+
+#caseStudy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caseContainer {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 56px 0px;
+}
+
+.caseCard {
+    width: 100%;
+    max-width: 336px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 24px;
+        h4 {
+            margin-bottom: 24px;
+        }
+}
+
+.caseCover {
+    display: flex;
+    width: 100%;
+}
+
+.caseSlide {
+    display: flex;
+    width: 100%;
+}
+
+.caseLinebreak {
+    background-color: #7969BA;
+    height: 3px;
+    width: 160px;
+    border-radius: 3px;
+    margin-bottom: 16px;
+}
+
+.projectCasecard {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 32px 8px;
+    transition: ease-in-out 0.3s;
+}
+
+.projectCaseinfo {
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px;
+    width: 100%;
+    max-width: 1440px;
+    p {
+        font-size: 24px;
+        margin: 8px 0px;
+
+    }
+}
+
+.projectCasecolumn {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 1440px;
+    padding: 16px;
+    /*margin: 0px 48px 0px 48px;*/
+    p {
+        font-size: 24px;
+        margin: 8px 0px;
+
+    }
+}
+
+.prototypeScreen {
+    max-width: 100%;
+    height: auto;
+    max-height: 640px;
+    margin: 16px 0px;
+}
+
+.avatars {
+    display: flex;
+    max-width: 320px;
+    max-height: 320px;
+    border-radius: 50%;
+    margin-right: 72px;
+    margin-bottom: 48px;
+    transition: ease-in-out 0.4s;
+}
+
+.avatars:hover {
+    max-width: 328px;
+    max-height: 328px;
+}
+
+.emojis {
+    max-width: 200px;
+    transition: ease-in-out 0.2s;
+}
+
+.emojis:hover {
+    max-width: 224px;
+}
+
+.testingImage {
+    display: flex;
+    max-width: 40%;
+    transition:  ease-in-out 0.3s;
+}
+
+.testingImage:hover {
+    display: flex;
+    max-width: 42%;
+}
+
+.soundcloud {
+    width: 100%;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 24px;
+        h4 {
+            margin-bottom: 24px;
+        }
+}
+
+/*Weird Arrow Animation thing i hoepe it work
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    rotate: 90deg;
+    position: fixed;
+    bottom: 24px;
+}
+
+.caseArrow {
+    animation: pulse 2s infinite;
+    width: 72px;
+    height: 72px;
+}
+
+@keyframes pulse {
+    0% {
+      transform: translateX(-50%) scale(1);
+      opacity: 0.5;
+    }
+    50% {
+      transform: translateX(-50%) scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) scale(1);
+      opacity: 0.5;
+    }
+  }
+
+it didn't :( */
+
+/*Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(85,71,141);
+    background: linear-gradient(180deg, rgba(85,71,141,1) 0%, rgba(238,51,162,1) 100%);
+    p {
+        color: #fcfcfc;
+        text-decoration: underline;
+        margin: 0px;
+    }
+    h4 {
+        color: #fcfcfc;
+    }
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footerCard {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+}
+
+.copyright {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.contactLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socialIcon {
+    max-width: 56px;
+    margin: 16px;
+    transition: ease-in-out 0.2s;
+    border-radius: 50%;
+}
+
+.socialIcon:hover {
+    max-width: 64px;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2);
+
+}
+
+/*Media Breaks*/
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    nav a {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footerContainer {
+        flex-wrap: wrap;
+    }
+
+    .projectCardreverse {
+        flex-direction: column-reverse;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+    .aboutPhoto {
+        margin-right: 0px;
+    }
+    .caseArrow {
+        width: 48px;
+        height: 48px;
+    }
+    h1{
+        font-size: 40px;
+    }
+
+    .projectCasecard {
+        flex-wrap: wrap;
+    }
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    nav a {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footerContainer {
+        flex-wrap: wrap;
+    }
+
+    .projectCardreverse {
+        flex-direction: column-reverse;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+    .aboutPhoto {
+        margin-right: 0px;
+    }
+    .caseArrow {
+        width: 48px;
+        height: 48px;
+    }
+    h1{
+        font-size: 40px;
+    }
+
+    .projectCasecard {
+        flex-wrap: wrap;
+    }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+
+    .footerContainer {
+        flex-wrap: nowrap;
+    }
+
+    .projectCardreverse {
+        flex-direction: column-reverse;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+    .aboutPhoto {
+        margin-right: 0px;
+    }
+    .caseArrow {
+        width: 56px;
+        height: 56px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .projectCasecard {
+        flex-wrap: nowrap;
+    }
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+
+    .footerContainer {
+        flex-wrap: nowrap;
+    }
+
+    .projectCardreverse {
+        flex-direction: row;
+    }
+    .about-container {
+        flex-direction: row;
+    }
+    .aboutPhoto {
+        margin-right: 56px;
+    }
+    .caseArrow {
+        width: 72px;
+        height: 72px;
+    }
+    h1{
+        font-size: 56px;
+    }
+    .projectCasecard {
+        flex-wrap: nowrap;
+    }
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+
+    .footerContainer {
+        flex-wrap: nowrap;
+    }
+
+    .projectCardreverse {
+        flex-direction: row;
+    }
+    .about-container {
+        flex-direction: row;
+    }
+    .aboutPhoto {
+        margin-right: 56px;
+    }
+    .caseArrow {
+        width: 72px;
+        height: 72px;
+    }
+    h1{
+        font-size: 56px;
+    }
+    .projectCasecard {
+        flex-wrap: nowrap;
+    }
+ } 
